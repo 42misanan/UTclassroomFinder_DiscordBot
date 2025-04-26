@@ -68,7 +68,7 @@ async def classroom(ctx, target: str):
                     result.append(f"{row['科目番号']} {row['科目名']} の教室は 指定されていません. ")
                 else:
                     result.append(f"{row['科目番号']} {row['科目名']} の教室は {row['教室']} です")
-        if result == None:
+        if result == []:
             await ctx.send('一致するものがありませんでした')
         else: 
             message = "\n".join(result)
