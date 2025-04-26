@@ -1,2 +1,3 @@
 *.env
-kdb_2025-ja_fix.csv
+class.csv
+__pycache__/
